@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+html {
+  /* makes 1 rem equivalent to 10px */
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.4;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
