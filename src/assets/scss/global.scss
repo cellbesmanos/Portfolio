@@ -1,4 +1,6 @@
 @use "reset";
+@use "utilities";
+@use "animations";
 
 :root {
   --ff-heading-sans-serif: 'Montserrat', sans-serif;
@@ -113,7 +115,7 @@
       font-family: var(--ff-heading-sans-serif);
     }
 
-    & h1 span {
+    & h1 span:first-of-type {
       text-transform: uppercase;
       font-size: var(--fs-lg);
       font-family: var(--ff-body-sans-serif);

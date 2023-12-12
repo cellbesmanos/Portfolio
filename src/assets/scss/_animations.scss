@@ -1,0 +1,65 @@
+
+.load-from-top {
+  opacity: 0;
+
+  animation: loadFromTop;
+  animation-duration: var(--duration, 0.8s);
+  animation-delay: var(--delay, 0);
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loadFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.load-from-bottom {
+  opacity: 0;
+
+  animation: loadFromBottom;
+  animation-duration: var(--duration, 0.8s);
+  animation-delay: var(--delay, 0);
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loadFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scale-from-bottom {
+  transform: scaleY(0);
+  transform-origin: bottom;
+
+  animation: scaleFromBottom;
+  animation-duration: var(--duration, 0.8s);
+  animation-delay: var(--delay, 0);
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scaleFromBottom {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
