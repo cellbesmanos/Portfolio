@@ -15,33 +15,33 @@
   <header class="header">
     <nav>
       <div class="container nav">
-        <div class="nav__logo load-from-top" style="--duration: 0.8s">
+        <div class="nav__logo load-from-bottom" style="--duration: 0.8s">
           <a href="/">as</a>
         </div>
     
         <ul class="nav__links">
-          <li class="load-from-top" style="--delay: 0.6s"><a href="#">LinkedIn</a></li>
-          <li class="load-from-top" style="--delay: 1s"><a href="#">GitHub</a></li>
+          <li class="load-from-bottom" style="--delay: 0.2s"><a href="#">LinkedIn</a></li>
+          <li class="load-from-bottom" style="--delay: 0.4s"><a href="#">GitHub</a></li>
         </ul>
       </div>
     </nav>
   
     <div class="hero">
-      <div class="hero__image">
+      <div class="hero__image show-up" style="--delay: 0.5s">
         <img src="/images/hero-image.png" alt="image of christian smiling">
       </div>
       
       <div class="hero__description">
         <h1>
-            <span class="block">Hi, I'm Christian</span>
-            <span>a front-end developer.</span>
+            <span class="block load-from-bottom" style="--delay: 0.7s">Hi, I'm Christian</span>
+            <span class="block load-from-bottom" style="--delay: 1.5s">a front-end developer.</span>
         </h1>
         
-        <p>I craft awesome experiences through code.</p>
+        <p class="show-up" style="--delay: 2.5s">I craft awesome experiences through code.</p>
       </div>
     </div>
 
-    <div class="header__scroll-indicator scale-from-bottom" style="--duration: 0.8s; --delay: 1.6s"></div>
+    <div class="header__scroll-indicator scale-from-bottom" style="--duration: 0.6s"></div>
   </header>
 
   <main>

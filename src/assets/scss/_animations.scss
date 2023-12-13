@@ -63,3 +63,23 @@
     transform: scaleY(1);
   }
 }
+
+.show-up {
+  opacity: 0;
+  
+  animation: showUp;
+  animation-duration: var(--duration, 0.8s);
+  animation-delay: var(--delay, 0);
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showUp {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
